@@ -1,0 +1,25 @@
+{
+    "name": "venveo/craft-installer",
+    "description": "Install Craft CMS from the command line.",
+    "keywords": ["craft","craftcms"],
+    "homepage": "http://github.com/venveo/craft-installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason McCallister",
+            "email": "jason@venveo.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "5.*",
+        "symfony/console": "3.*"
+    },
+    "bin": [
+        "craft"
+    ],
+    "autoload": {
+        "psr-4": {
+            "CraftInstaller\\": "src"
+        }
+    }
+}
