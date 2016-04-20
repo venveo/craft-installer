@@ -4,17 +4,23 @@ Install Craft CMS from a command line with composer. This tool is heavily inspir
 
 ## Requirements
 
+- [Composer](https://getcomposer.org)
+
 ## Installation and Usage
 
-### Standard
+1. Ensure that the `~/.composer/vendor/bin` is available in your terminal PATH.
 
-### With Craft Boilerplate
+	**Note**: my [Oh My ZSH](http://ohmyz.sh) profile has this line:
 
-Whats included:
+	`export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/username/.composer/vendor/bin"`
 
-- Laravel Elixir
-- PHPDotEnv
-- Preset configuration files
+	**Note**: make sure you change `username` above
+
+2. Require `craft` globally by using this command:
+
+	`composer global require "venveo/craft-installer=dev-master"`
+
+3. Change to a new directory, such as `~/Sites`, and run `craft install mywebsite`.
 
 ## Credits
 
